@@ -155,13 +155,13 @@ body {
     font-style: normal;
 }
 
-a {
+.list a{
     text-decoration: none;
     color: #fefba9;
 }
 
 .main {
-    margin-top: 100px;
+    margin-top: 75px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -184,11 +184,47 @@ a {
     padding-top: 4em;
     width: 100%;
     padding-bottom: 10px;
+    padding-left: 20px;
     font-size: 0.6em;
     display: block;
     background: linear-gradient(180deg, #fefba9 1%, #193A9F 99%)
 }
+.idk2{
+    color: #444;
+    width: 100%;
+    margin: 0px;
+}
+.contact{
+    margin: 0px;
+    margin-left: 20px;
+}
+.idk{
+    color:#444;
+    margin-left: 20px;
 
+}
+.idk3{
+    color:#444;
+    margin: 20px;
+
+}
+.rule{
+    margin: 20px;
+    margin-top: 0px;
+}
+td{
+    padding-right: 50px;
+}
+.header{
+    text-align: center;
+    color: #305cde;
+    font-size: 2em;
+    margin: 0px;
+}
+.water{
+    width: 100%;
+    height: auto;
+}
 @media only screen and (max-width: 768px) {
     body {
         font-size: 1em; /* Adjust font size for smaller screens */
