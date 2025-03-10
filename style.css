@@ -225,6 +225,13 @@ td{
     width: 100%;
     height: auto;
 }
+.spot-it{
+    position: absolute;
+    left: 200px;
+    top: 400px;
+    z-index: 2;
+    opacity: 2%;
+}
 @media only screen and (max-width: 768px) {
     body {
         font-size: 1em; /* Adjust font size for smaller screens */
