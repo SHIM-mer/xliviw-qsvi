@@ -233,6 +233,13 @@ td{
 .whater{
     width: auto;
 }
+.whater2{
+    width: auto;
+    height: 30em;
+    box-sizing: border-box;
+
+    margin: 10px;
+}
 .text-welcome{
     padding: 20px;
     margin: 0px;
@@ -267,6 +274,40 @@ td{
     height: 9em;
     width: 16em;
     text-align: center;
+}
+.blue{
+    /* width: 100%;
+    background-color: #305cde;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+    width: auto;
+    /* background: linear-gradient(180deg, #fffcca 1%, #FEFCC2 99%); */
+    background-color: #305cde;
+    margin: 1em;
+    border-radius: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.blue hr{
+    margin: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    color: #fefba9;
+}
+.news{
+    margin: 0px;
+    padding: 0px;
+    /* margin-left: 25px; */
+    color: #fefba9;
+    text-align: center;
+    font-size: 2em;
+}
+.yapping{
+    color: #fefba9;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0px
 }
 @media only screen and (max-width: 768px) {
     body {
