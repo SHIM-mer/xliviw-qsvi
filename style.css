@@ -326,11 +326,12 @@ td{
 @media only screen and (max-width: 768px) {
     body {
         font-size: 1em; /* Adjust font size for smaller screens */
+        overflow-x: hidden;
     }
 }
 @media only screen and (max-width: 400px) {
-    body {
-    
+    body{
+        overflow-x: hidden;
     }
     .header{
         width: auto;
@@ -349,5 +350,8 @@ td{
     }
     .big-box{
         max-width: 320;
+    }
+    body{
+        overflow-x: hidden;
     }
 }
