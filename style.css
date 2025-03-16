@@ -230,8 +230,8 @@ td{
 }
 .spot-it{
     position: absolute;
-    left: 200px;
-    top: 400px;
+    left: 250px;
+    top: 130px;
     z-index: 2;
     opacity: 2%;
     height: 100px;
@@ -353,5 +353,8 @@ td{
     }
     body{
         overflow-x: hidden;
+    }
+    .idk{
+        font-size: 0.8em;
     }
 }
