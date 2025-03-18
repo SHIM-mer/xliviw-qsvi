@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMM? - SHIM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav">
+                    <ul class="list">
+                        <li class="li"><a href="#" class="obfuscate">Home</a></li>
+                        <li class="li">·</li>
+                        <li class="li"><a href="#" class="obfuscate">News</a></li>
+                        <li class="li">·</li>
+                        <li class="li"><a href="#" class="obfuscate">About</a></li>
+                        <li class="li">·</li>
+                        <li class="li"><a href="#" class="obfuscate">Contact Us</a></li>
+                    </ul>
+                    <div class="title">
+                        <div class="stanton">
+                            <h1 style="margin: 0px;" >W</h1>
+                            <p style="margin: 0px;" class="obfuscate">some</p>
+                        </div>
+                        <div class="high">
+                            <h1 style="margin: 0px;">L</h1>
+                            <p style="margin: 0px;"class="obfuscate">thing</p>
+                        </div>
+                        <div class="insititute">
+                            <h1 style="margin: 0px;">M</h1>
+                            <p style="margin: 0px;"class="obfuscate">has</p>
+                        </div>
+                        <div class="of">
+                            <h1 style="margin: 0px;">&nbsp;</h1>
+                            <p style="margin: 0px;"class="obfuscate">changed</p>
+                        </div>
+                        <div class="music">
+                            <h1 style="margin: 0px;">Q</h1>
+                            <p style="margin: 0px;" class="obfuscate">hmm</p>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="cipher">
+            <img src="cipher-key.png" alt="cipher-key shift by -3">
+
+        </div>
+         <audio src="spectrogram.wav" id="my_audio" muted autoplay></audio>
+    </section>
+    <footer>
+        <section class="copyright" id="obfuscate">
+            Copyright © 
+            March 25 - March 28          Stanton High Institute Of Music.<br>All Rights Not Reserved.
+          </section>
+        <div class="nav">
+            <ul class="list">
+                <li class="li"><a href="#" class="obfuscate">Home</a></li>
+                        <li class="li">·</li>
+                        <li class="li"><a href="#" class="obfuscate">News</a></li>
+                        <li class="li">·</li>
+                        <li class="li"><a href="#" class="obfuscate">About</a></li>
+                        <li class="li">·</li>
+                        <li class="li"><a href="#" class="obfuscate">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+    const elements = document.querySelectorAll('.obfuscate');
+
+    elements.forEach(element => {
+    const originalText = element.textContent;
+
+    function obfuscateText() {
+        const words = originalText.split(' ');
+        const obfuscatedWords = words.map(word => {
+            const placeholder = Array.from({ length: word.length }, () =>
+                String.fromCharCode(Math.floor(Math.random() * 95) + 32)
+            ).join('');
+            return placeholder;
+        });
+        element.textContent = obfuscatedWords.join(' ');
+    }
+
+    setInterval(obfuscateText, 50); // Obfuscate every 500ms
+});
+const textElement2 = document.getElementById('obfuscate');
+const originalText2 = textElement2.textContent;
+let intervalId;
+
+function obfuscate() {
+    const words = originalText2.split(' ');
+    const obfuscatedWords = words.map(word => {
+        // Generate a placeholder with the same length as the original word
+        const placeholder = Array.from({ length: word.length }, () => 
+            String.fromCharCode(Math.floor(Math.random() * 95) + 32)
+        ).join('');
+        
+        return placeholder;
+    });
+    
+    textElement2.textContent = obfuscatedWords.join(' ');
+}
+
+// Start animation
+function startObfuscation() {
+    if (intervalId) clearInterval(intervalId);
+    intervalId = setInterval(obfuscate, 50); // Adjust interval as needed
+}
+
+// Optional: Stop animation and restore original text
+function stopObfuscation() {
+    clearInterval(intervalId);
+    textElement.textContent = originalText;
+}
+
+// Start the effect
+startObfuscation();
+window.onload = function() {
+    document.getElementById("my_audio").play();
+}
+    </script>
+</body>
+</html>

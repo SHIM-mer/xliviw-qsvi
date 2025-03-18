@@ -322,7 +322,25 @@ td{
     justify-content: center;
     width: auto;
 }
-
+.cipher img{
+    margin-top:50px;
+    width: auto;
+    height: 300px;
+}
+.cipher{
+    text-align: center;
+}
+.chinese img{
+    width: auto;
+    height: 50px;
+}
+.chinese{
+    text-align: center;
+    margin-top: 200px;
+}
+.my_audio{
+    /* display: none; */
+}
 @media only screen and (max-width: 768px) {
     body {
         font-size: 1em; /* Adjust font size for smaller screens */
