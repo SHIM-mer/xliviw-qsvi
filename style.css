@@ -165,6 +165,7 @@ body {
     margin-top: 75px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .box2{
@@ -340,6 +341,9 @@ td{
 }
 .my_audio{
     /* display: none; */
+}
+.directory{
+    text-align: center;
 }
 @media only screen and (max-width: 768px) {
     body {
