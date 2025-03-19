@@ -221,8 +221,8 @@ background-image: radial-gradient(circle at 91% 26%, rgba(255,255,255,0.03) 0%, 
 }
 
 .hide-wheel {
-  width: 500px;
-  height: 500px;
+  width: 0px;
+  height: 0px;
   border-radius: 100%;
   background-color: #f0f8ff;
   position: absolute;
@@ -522,7 +522,7 @@ background-image: radial-gradient(circle at 91% 26%, rgba(255,255,255,0.03) 0%, 
 <body onload="hideFooter();">
   <div id="titleTab">Caesar Cipher Wheel</div>
   <div class="container">
-  <div class="outer-wheel" style="transform: translate(-50%, -50%) rotate(0deg);">
+  <div class="outer-wheel" style="transform: translate(-50%, -50%) rotate(0deg) scale(0.50);">
       <li><div class="char"><p>4</p></div><div class="slice"></div>
       </li>
       <li><div class="char"><p>B</p></div><div class="slice"></div>
@@ -600,7 +600,7 @@ background-image: radial-gradient(circle at 91% 26%, rgba(255,255,255,0.03) 0%, 
       </li>
     </div>
     <div class="hide-wheel"></div>
-    <div onmousemove="m(event)" class="inner-wheel" style="transform: translate(-50%, -50%) rotate(-41.5384deg);">
+    <div onmousemove="m(event)" class="inner-wheel" style="transform: translate(-50%, -50%) rotate(-41.5384deg) scale(0.50);">
      
       <li><div class="char"><p>A</p>
       </div><div class="slice"></div>
