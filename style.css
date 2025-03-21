@@ -361,6 +361,9 @@ td{
 .wheelcipher{
     height: 100vh;
 }
+.amongus{
+    background-image: url(white.png);
+}
 @media only screen and (max-width: 768px) {
     body {
         font-size: 1em; /* Adjust font size for smaller screens */
