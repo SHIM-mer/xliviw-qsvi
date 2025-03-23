@@ -95,26 +95,23 @@
         function search(){
             const searched = document.getElementById("searchbar").value
             switch (searched.toLowerCase()) {
-                case "wlmq":
-                    location.href = "https://shim-mer.github.io/xliviw-qsvi/WLMQ.html"
-                    break;
-                case "four ahead":
-                    location.href = "https://shim-mer.github.io/xliviw-qsvi/caesar3.svg"
-                    break;
-                case "rickastley":
-                    location.href = "https://shim-mer.github.io/xliviw-qsvi/RickAstley.html"
-                    break;
-                case "meow meow":
+                case "mj":
                     location.href = "https://shim-mer.github.io/xliviw-qsvi/70s.html"
                     break;
-                case "meowmeow":
+                case "michealjackson":
                     location.href = "https://shim-mer.github.io/xliviw-qsvi/70s.html"
                     break;
-                case "never gonna give you up":
-                    location.href = "https://shim-mer.github.io/xliviw-qsvi/3454.png"
+                case "billieeilish":
+                    location.href = "https://shim-mer.github.io/xliviw-qsvi/00s.html"
                     break;
-                case "bye bye bye":
-                    location.href = "https://shim-mer.github.io/xliviw-qsvi/GL.png"
+                case "billie eilish":
+                    location.href = "https://shim-mer.github.io/xliviw-qsvi/00s.html"
+                    break;
+                case "nsync":
+                    location.href = "https://shim-mer.github.io/xliviw-qsvi/00s.html"
+                    break;
+                case "madonna":
+                    location.href = "https://shim-mer.github.io/xliviw-qsvi/90s.html"
                     break;
                 default:
                     document.getElementById("searchbar").value = "Directory not found"
@@ -123,7 +120,7 @@
             }
             const dday = new Date("Mar 28, 2025 00:00:00").getTime();
             setInterval(function(){
-                const current = new Date().getTime();
+                const current = new Date("Mar 28, 1990 00:00:00").getTime();
                 const difference = dday - current;
 
                 var days = Math.floor(difference / (1000*60*60*24));
