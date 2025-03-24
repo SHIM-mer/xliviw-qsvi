@@ -52,13 +52,13 @@
         <div class="directory"> 
             <input type="text" name=""  class="searchtes" id="searchbar" placeholder="search directories">
             <button type="submit" onclick="search()" class="icon"><i class="fa-solid fa-magnifying-glass"></i></button>
-            <p style="color: #fefba9; margin-left:50px ;">SHIM needs to change</p>
+            <p style="color: #fefba9; margin:0px; margin-left:50px; ">wlmq</p>
         </div>
             <div class=big-box>
                 <div class="box2">
-                    <p class="header">Welcome to SHIM</p>
+                    <p class="header" style="text-align: center;" >Welcome to SHIM</p>
                     <hr style="margin-left: 10px; margin-right: 10px; margin-top: 0px;">
-                    <p class="text-welcome">At SHIM, we believe that music is the universal language that uni<big>f</big>ied pe<big>o</big>ple together. O<big>ur</big> mission is to provide <big>a</big> compre<big>he</big>nsive music educ<big>a</big>tion that fosters creativity, <big>d</big>iscipline, confidence, And passion in every student.</p>
+                    <p class="text-welcome">At SHIM, we believe that music is the universal language that unified people together. Our mission is to provide a comprehensive music education that fosters creativity, discipline, confidence, And passion in every student.</p>
                     <p class="text-welcome">Here in SHIM, We are dedicated to 0<big>f</big>fer a wide range of mu<big>z</big>ic programs designed to meet t<big>h</big>e diver<big>x</big>e needs of our students. From <big>p</big>rivate lessons to <big>q</big>roup classes and ensemb<big>l</big>es, We stri<big>b</big>e to create a supporti<big>v</big>e environment where students can explore their musical talents and make connections.</p>
                 </div>
                 <div class="box3">
@@ -98,8 +98,8 @@
                 case "wlmq":
                     location.href = "https://shim-mer.github.io/xliviw-qsvi/WLMQ.html"
                     break;
-                case "four ahead":
-                    location.href = "https://shim-mer.github.io/xliviw-qsvi/caesar3.svg"
+                case "0f2hxpq1bv":
+                    location.href = "https://shim-mer.github.io/xliviw-qsvi/WLMQ.html"
                     break;
                 case "rickastley":
                     location.href = "https://shim-mer.github.io/xliviw-qsvi/RickAstley.html"
@@ -123,7 +123,8 @@
                     location.href = "https://shim-mer.github.io/xliviw-qsvi/learn.png"
                     break;
                 default:
-                    document.getElementById("searchbar").value = "Directory not found"
+                    document.getElementById("searchbar").setAttribute("placeholder","Directory not found");
+                    document.getElementById("searchbar").value = ""
                     break;
             }
             }

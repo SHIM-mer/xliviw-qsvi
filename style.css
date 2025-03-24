@@ -219,13 +219,11 @@ td{
 }
 .header{
     text-align: center;
-    /* color: #305cde; */
     color: #fefba9;
     font-size: 2em;
     margin: 0px;
     padding-top: 8px;
     padding-bottom: 8px;
-    width: 80%;
 }
 .water{
     width: 100%;
@@ -357,6 +355,7 @@ td{
 .amongus{
     background-image: url(white.png);
 }
+
 @media only screen and (max-width: 768px) {
     body {
         font-size: 1em; /* Adjust font size for smaller screens */
@@ -367,9 +366,6 @@ td{
     body{
         overflow-x: hidden;
     }
-    .header{
-        width: auto;
-    }
     
     
     .whater{
@@ -379,12 +375,7 @@ td{
 
 }
 @media only screen and (max-width: 320px) {
-    .header{
-        width: auto;
-    }
-    .big-box{
-        max-width: 320;
-    }
+    
     body{
         overflow-x: hidden;
     }
